@@ -52,11 +52,11 @@ const DiaryEntry = () => {
           onChange={(e) => handleDatePicker(e)}
         />
 
-        <h1 className="text-4xl text-slate-600 mb-5 font-light ">{`${formatted}`}</h1>
+        <h1 className="text-4xl text-slate-600 mb-5  ">{`${formatted}`}</h1>
         <div>
           <form onSubmit={handleSubmit}>
             <input
-              className="text-slate-500 text-xl mb-3 min-w-md font-light text-center"
+              className="text-slate-700 text-xl mb-3 min-w-md text-center"
               placeholder="What's on your mind?"
               onChange={(e) => setInput(e.target.value)}
               value={input}
@@ -69,10 +69,7 @@ const DiaryEntry = () => {
             .filter((entry) => entry.date === datePicker)
             .map((entry) => {
               return (
-                <p
-                  key={entry.id}
-                  className="text-slate-500 text-base font-light"
-                >
+                <p key={entry.id} className="text-slate-500 text-base ">
                   <span>{entry.timePosted.format("h:m A")} - </span>
                   {entry.content}
                 </p>
