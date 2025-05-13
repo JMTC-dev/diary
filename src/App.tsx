@@ -5,11 +5,7 @@ import "./App.css";
 import DiaryEntry from "./components/DiaryEntry";
 
 function App() {
-  return (
-    <>
-      <DiaryEntry />
-    </>
-  );
+  return <DiaryEntry />;
 }
 
 export default App;
